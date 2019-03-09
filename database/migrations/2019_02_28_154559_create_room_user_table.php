@@ -13,7 +13,7 @@ class CreateRoomUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('room_user', function (Blueprint $table) {
+        Schema::create('room_user', function (Blueprint $table) {
             $table->integer('room_id');
             $table->integer('user_id');
             $table->timestamps();
